@@ -1,0 +1,148 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Input Mono;
+  color: #065b80;
+  background: #f1f1f1;
+}
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Card {
+  width: 100%;
+  background: white;
+  box-shadow: 0 1px 7px rgba(0,0,0,.3);
+}
+
+.Card__container {
+  padding: 2rem;
+  max-width: 38rem;
+  width: 100%;
+}
+
+.Card__title {
+  margin: 0;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.Card__header {
+  border-bottom: 1px solid rgba(82, 85, 120, 0.25);
+  padding: 1.25rem 1rem 1.25rem 0;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Card__content {
+  position: relative;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+.Input {
+  padding: .5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.Input__label {
+  width: 100%;
+  text-align: right;
+  max-width: 15%;
+  margin: 0;
+  line-height: 1;
+  opacity: .75;
+  margin-right: 1rem;
+}
+
+.Input__elm {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(82, 85, 120, 0.25);
+  padding: .25rem;
+  font: inherit;
+}
+
+.Btn {
+  border: 0;
+  border-radius: .25rem;
+  padding: .25rem .5rem;
+  background: none;
+  appearance: none;
+  padding: .5rem 1rem;
+  margin-left: .5rem;
+  -webkit-font-smoothing: antialiased;
+  font: 600 1rem Input Sans Condensed;
+}
+
+.Btn--solid {
+  color: white;
+  background-image: linear-gradient(-135deg, #61D3FA 0%, #007CB1 100%);
+  border-radius: 14px;
+}
+
+.Btn--outline {
+  color: #007CB1;
+}
+
+:root {
+  --success: #f4b509
+}
+
+.SuccessIndicator {
+  font-weight: 600;
+}
+
+.SuccessIndicator.centered {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -1.25rem;
+  color: var(--success);
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  background: white;
+  box-shadow: 0 1px 7px rgba(0,0,0,.3);
+  max-width: 6rem;
+  border-radius: .5rem;
+  padding: .25rem;
+}
+
+.SuccessIndicator.checkmark {
+  position: absolute;
+  right: 0;
+  padding: 1rem 1rem 1rem 8rem;
+  background: white;
+  top: -6rem;
+  color: var(--success);
+}
+
+.SuccessIndicator.ribbon {
+  background: var(--success);
+  color: white;
+  padding: .5rem .5rem .5rem 1rem;
+  position: absolute;
+  width: calc(100% + 1rem);
+  left: -1rem;
+  right: 0;
+  top: calc(-2rem + -1px);
+}
